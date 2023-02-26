@@ -18,7 +18,7 @@ def result():
 # Logic of website, if the input is not in the list, it will return invalid input else it will remove that entry-
     # -from the list and randomly choose a different restaurant
     if ans1 not in food:
-        return render_template('home.html', error='Invalid input')
+        return render_template('home.html', error='Invalid input, this application is case sensitive and use apostrophes')
     else:
         food_copy = food.copy()
         food_copy.remove(ans1)
