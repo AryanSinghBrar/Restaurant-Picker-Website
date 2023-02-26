@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Which Restaurant To Go To?</title>
+  </head>
+  <body>
+    <h1>Which restaurant did you go to last? Choose between the following:</h1>
+    <h2>Osmow's, Burrito Boyz, Harvey's, Red Chilli, Meltwich, Mary Brown's, Popeye's, Subway or BarBurrito</h2>
+    <form method="post" action="/result">
+      <input type="text" name="restaurant">
+      <input type="submit" value="Submit">
+    </form>
+    {% if error %}
+      <p>{{ error }}</p>
+    {% endif %}
+  </body>
+</html>
